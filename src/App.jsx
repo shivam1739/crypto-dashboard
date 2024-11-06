@@ -11,7 +11,7 @@ import SideBar from "./components/SideBar";
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       <Router>
         <SideBar />
 

@@ -17,7 +17,7 @@ const UserSection = () => {
   }, []);
 
   return (
-    <div className="h-16 flex items-center mx-4 border-t-2 gap-2 border-gray_lite">
+    <div className="h-16 flex items-center mx-4 border-t-2  gap-2 border-gray_lite">
       {user ? (
         <>
           <img
@@ -25,7 +25,7 @@ const UserSection = () => {
             alt="user img"
             className="w-9 h-9 rounded-full"
           />
-          <div className="flex flex-col">
+          <div className="hidden lg:flex flex-col">
             <span className="font-semibold">{user.name}</span>
             <span className="text-xs text-muted">{user.email}</span>
           </div>

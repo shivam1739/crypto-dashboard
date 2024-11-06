@@ -14,7 +14,7 @@ const DashboardLayout = ({ children }) => {
         <div className="col-span-1 lg:col-span-7 self-start p-4">
           {children}
         </div>
-        <div className="col-span-1 lg:col-span-3 self-start border-t-2 lg:border-l-2 border-gray_lite">
+        <div className="col-span-1 lg:col-span-3 self-start border-l-2 border-gray_lite">
           <Suspense fallback={<div>Loading...</div>}>
             <RightInfoBar />
           </Suspense>
