@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom"; // Import Link from react-router-dom
+import { Link, useLocation } from "react-router-dom";
 import { sidebarItems } from "../utils/sideBarUtils";
 import UserSection from "./UserSection";
 
@@ -6,7 +6,7 @@ const SideBar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky flex flex-col lg:justify-between left-0 w-[30%] max-w-[17rem] h-screen   border-gray_lite border-r-2 ">
+    <nav className="sticky top-0 flex flex-col  lg:justify-between left-0 w-[30%] max-w-[17rem] h-screen   border-gray_lite border-r-2 ">
       <div className="w-full text-2xl h-[6rem]  p-6 font-bold">
         <span>cupi</span>
         <span className="text-primary">vupi</span>
@@ -24,7 +24,7 @@ const SideBar = () => {
                 return (
                   <li key={`${idx}-${list.label}`} className="mb-1">
                     <Link
-                      to={list.path} // Assumes each list item has a `path` for navigation
+                      to={list.path}
                       className={`${
                         isActive
                           ? "bg-white font-bold text-black"

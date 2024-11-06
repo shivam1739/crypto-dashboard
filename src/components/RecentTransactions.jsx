@@ -17,7 +17,7 @@ const RecentTransactions = () => {
       <h6 className="font-semibold sticky top-0 w-full bg-secondary">
         Recent Transactions
       </h6>
-      <ul className=" flex flex-col gap-2">
+      <ul className="flex flex-col gap-2">
         {recentTransactions.map((transaction) => {
           const { coin, symbol, marketCap, change, chartData } = transaction;
           const symbolKey = symbol.split("/")[0];
@@ -25,25 +25,25 @@ const RecentTransactions = () => {
           return (
             <li
               key={symbol}
-              className="flex h-[3.5rem] border-b-2 border-gray_lite items-center justify-between px-5"
+              className="flex h-[3.5rem] border-b-2 border-gray_lite items-center justify-between px-1 gap-2 lg:gap-0 lg:px-5"
             >
               <div className="flex gap-3 items-center">
                 {COIN_ICON_MAP[symbolKey]}
                 <div>
-                  <div className="text-sm ">{coin}</div>
+                  <div className="text-xs lg:text-sm ">{coin}</div>
                   <div className="text-[10px] text-muted font-semibold">
                     {symbol}
                   </div>
                 </div>
               </div>
               <div>
-                <div className="text-sm text-muted font-semibold">
+                <div className="text-xs lg:text-sm  text-muted font-semibold">
                   Market Cap
                 </div>
                 <div className="text-xs ">${marketCap}</div>
               </div>
               <div>
-                <div className="text-sm text-muted font-semibold">
+                <div className="text-xs lg:text-sm  text-muted font-semibold">
                   30h Changes
                 </div>
                 <div
