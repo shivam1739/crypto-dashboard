@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
+import { lazy, Suspense } from "react";
 import DashboardHeader from "../components/DashboardHeader";
-import RightInfoBar from "../components/RightInfoBar";
+
+const RightInfoBar = lazy(() => import("../components/RightInfoBar"));
 
 const DashboardLayout = ({ children }) => {
   return (
@@ -13,7 +15,9 @@ const DashboardLayout = ({ children }) => {
           {children}
         </div>
         <div className="col-span-1 lg:col-span-3 self-start border-t-2 lg:border-l-2 border-gray_lite">
-          <RightInfoBar />
+          <Suspense fallback={<div>Loading...</div>}>
+            <RightInfoBar />
+          </Suspense>
         </div>
       </div>
     </div>

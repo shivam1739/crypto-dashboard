@@ -1,17 +1,26 @@
+import { Suspense, lazy } from "react";
 import DashboardLayout from "../layout/DashboardLayout";
-import KPIDashBoard from "../components/KPIDashBoard";
-import RecentTransactions from "../components/RecentTransactions";
+
+// Lazy load the components
+const KPIDashBoard = lazy(() => import("../components/KPIDashBoard"));
+const RecentTransactions = lazy(() =>
+  import("../components/RecentTransactions")
+);
 
 const Dashboard = () => {
   return (
     <div className="relative w-full">
       <DashboardLayout>
-        <div className="flex flex-col gap-3 ">
+        <div className="flex flex-col gap-3">
           <div className="h-[25rem] lg:h-[22rem]">
-            <KPIDashBoard />
+            <Suspense fallback={<div>Loading KPI Dashboard...</div>}>
+              <KPIDashBoard />
+            </Suspense>
           </div>
           <div className="h-[18rem] overflow-y-scroll">
-            <RecentTransactions />
+            <Suspense fallback={<div>Loading Recent Transactions...</div>}>
+              <RecentTransactions />
+            </Suspense>
           </div>
         </div>
       </DashboardLayout>
