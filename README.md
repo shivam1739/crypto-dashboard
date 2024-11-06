@@ -2,6 +2,9 @@
 
 This is a crypto dashboard application built with React and Vite. It uses Tailwind CSS for styling, React Icons for icons, mock data for cryptocurrency information, and Recharts for interactive data visualization.
 
+## Deployed URL:
+https://crypto-dashboard-wine.vercel.app/dashboard
+
 ## Table of Contents
 - [Features](#features)
 - [Folder Structure](#folder-structure)
