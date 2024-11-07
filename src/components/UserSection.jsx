@@ -27,7 +27,9 @@ const UserSection = () => {
           />
           <div className="hidden lg:flex flex-col">
             <span className="font-semibold">{user.name}</span>
-            <span className="text-xs text-muted">{user.email}</span>
+            <span className="text-xs text-muted dark:text-secondary-light">
+              {user.email}
+            </span>
           </div>
           <BiLogOutCircle
             size={24}

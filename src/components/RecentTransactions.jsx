@@ -13,8 +13,8 @@ const RecentTransactions = () => {
   }, [RecentTransactionsData]);
 
   return (
-    <div className="flex flex-col dark:bg-white-lite ">
-      <h6 className="font-semibold sticky top-0 w-full bg-secondary dark:bg-white-dark">
+    <div className="flex flex-col dark:bg-white-dark ">
+      <h6 className="font-semibold z-10 sticky top-0 w-full bg-secondary dark:bg-white-lite">
         Recent Transactions
       </h6>
       <ul className="flex flex-col gap-2">
@@ -31,19 +31,19 @@ const RecentTransactions = () => {
                 {COIN_ICON_MAP[symbolKey]}
                 <div>
                   <div className="text-xs lg:text-sm ">{coin}</div>
-                  <div className="text-[10px] text-muted font-semibold">
+                  <div className="text-[10px] text-muted dark:text-secondary-light font-semibold">
                     {symbol}
                   </div>
                 </div>
               </div>
               <div>
-                <div className="text-xs lg:text-sm  text-muted font-semibold">
+                <div className="text-xs lg:text-sm  text-muted dark:text-secondary-light font-semibold">
                   Market Cap
                 </div>
                 <div className="text-xs ">${marketCap}</div>
               </div>
               <div>
-                <div className="text-xs lg:text-sm  text-muted font-semibold">
+                <div className="text-xs lg:text-sm  text-muted dark:text-secondary-light font-semibold">
                   30h Changes
                 </div>
                 <div
