@@ -9,7 +9,7 @@ const RecentTransactions = lazy(() =>
 
 const Dashboard = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full  dark:bg-white-dark ">
       <DashboardLayout>
         <div className="flex flex-col gap-3">
           <div className="h-[25rem] lg:h-[22rem]">

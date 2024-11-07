@@ -4,13 +4,15 @@ import { COIN_ICON_MAP } from "../utils/common";
 
 const Portfolio = () => {
   return (
-    <div className="h-[14.25rem] rounded-3xl border-2 w-full border-gray_lite p-3 overflow-y-auto ">
-      <div className="flex justify-between sticky -top-3 bg-secondary ">
-        <div className="text-highlight font-semibold">Your Portfolio</div>
+    <div className="h-[14.25rem] rounded-3xl border-2 w-full border-gray_lite p-3 overflow-y-auto dark:bg-white-dark">
+      <div className="flex justify-between sticky -top-3 bg-secondary dark:bg-white-dark">
+        <div className="text-highlight font-semibold dark:bg-white-dark dark:text-black w-full ">
+          Your Portfolio
+        </div>
         <div>
           <BiPlusCircle
             size={24}
-            className="text-white rounded-full hover:bg-primary hover:text-black"
+            className="text-white rounded-full hover:bg-primary hover:text-black dark:bg-black"
           />
         </div>
       </div>
@@ -24,7 +26,7 @@ const Portfolio = () => {
               <div>{COIN_ICON_MAP[asset.symbol] || COIN_ICON_MAP["COIN"]}</div>
               <div>
                 <div className="text-sm">{asset.currency}</div>
-                <div className="text-xs text-muted">
+                <div className="text-xs text-muted dark:text-secondary-light">
                   {asset.transactionType}
                 </div>
               </div>

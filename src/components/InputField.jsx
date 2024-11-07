@@ -12,7 +12,7 @@ const InputField = ({ onSearch }) => {
       <input
         type="text"
         onChange={handleChange}
-        className="bg-inherit h-full border-none pl-3 pr-10 w-full outline-none"
+        className="bg-inherit h-full border-none pl-3 pr-10 w-full outline-none dark:border-secondary"
         placeholder="Search anything in cupivupi"
         value={value}
       />
@@ -20,7 +20,7 @@ const InputField = ({ onSearch }) => {
         className="absolute right-3 top-[50%] translate-y-[-50%]"
         onClick={() => onSearch(value)}
       >
-        <BiSearch size={18} className="text-highlight" />
+        <BiSearch size={18} className="text-highlight dark:text-secondary" />
       </span>
     </div>
   );

@@ -7,12 +7,14 @@ const MostBoughtCrypto = () => {
   const data = mostBoughtCoin;
   const icon = COIN_ICON_MAP[data.symbol];
   return (
-    <div className="flex  justify-between flex-col w-full h-[9rem] border-2 rounded-3xl border-gray_lite p-2">
+    <div className="flex  justify-between flex-col w-full h-[9rem] border-2 rounded-3xl border-gray_lite p-2 dark:bg-white-dark">
       <div className="flex gap-1">
         <div>{icon}</div>
         <div className="flex flex-col">
           <span className="text-sm">{data.displayName}</span>
-          <span className="text-[10px] text-muted">{data.symbol}</span>
+          <span className="text-[10px] text-muted dark:text-secondary-light">
+            {data.symbol}
+          </span>
         </div>
         {data.todaysChange > 0 ? (
           <BiCaretUp size={24} className="text-primary" />

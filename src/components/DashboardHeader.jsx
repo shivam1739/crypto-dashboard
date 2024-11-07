@@ -6,7 +6,7 @@ import AddNewCoin from "./AddNewCoin";
 
 const DashboardHeader = () => {
   return (
-    <header className="  w-full h-20 border-b-2 border-gray_lite flex items-center px-6">
+    <header className="  w-full h-20 border-b-2 border-gray_lite flex items-center px-6 dark:bg-white-lite">
       <div className="flex gap-3 items-center w-[50%]">
         <BiChevronLeft size={24} className="text-gray-600" />
         <span className="font-medium text-lg">Dashboard</span>

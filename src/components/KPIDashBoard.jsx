@@ -7,7 +7,7 @@ const KPIDashBoard = () => {
   const [KPIdata] = useState(KPI_DATA);
 
   return (
-    <div className="w-full h-full flex flex-col lg:flex-row lg:contents gap-2 lg:gap-0 rounded-3xl border-2 p-5  border-gray_lite">
+    <div className="w-full h-full flex flex-col lg:flex-row lg:contents gap-2 lg:gap-0 rounded-3xl border-2 p-5  border-gray_lite  ">
       <div className="flex flex-col gap-2 lg:gap-0  lg:items-center md:justify-between lg:flex-row">
         <div>
           <h6 className="text-muted text-sm font-semibold">Total Balance</h6>

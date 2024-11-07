@@ -13,8 +13,8 @@ const RecentTransactions = () => {
   }, [RecentTransactionsData]);
 
   return (
-    <div className="flex flex-col">
-      <h6 className="font-semibold sticky top-0 w-full bg-secondary">
+    <div className="flex flex-col dark:bg-white-lite ">
+      <h6 className="font-semibold sticky top-0 w-full bg-secondary dark:bg-white-dark">
         Recent Transactions
       </h6>
       <ul className="flex flex-col gap-2">
@@ -65,11 +65,11 @@ const RecentTransactions = () => {
               <div className="flex gap-3">
                 <Button
                   label="Sell"
-                  className="border-2 rounded-full border-gray_lite px-4 h-9 text-center content-center hover:bg-white hover:text-black"
+                  className="border-2 rounded-full border-gray_lite px-4 h-9 text-center content-center hover:bg-white hover:text-black dark:bg-secondary-light dark:text-white dark:hover:bg-black"
                 />
                 <Button
                   label="Buy"
-                  className="border-2 rounded-full bg-white border-white text-primary px-4 h-9 text-center content-center hover:bg-primary hover:border-black hover:text-black"
+                  className="border-2 rounded-full bg-white border-white text-primary px-4 h-9 text-center content-center hover:bg-primary hover:border-black hover:text-black dark:bg-primary dark:text-white"
                 />
               </div>
             </li>
